@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a86ff;
+    padding: 50PX;
+    flex-direction: column;
+}
+
+
+/* form */
+.container{
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+.container .title{
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.container .title h1{
+    font-family: "Anta", sans-serif;
+}
+
+/* form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.name{
+    width: calc(100% / 2 - 15px);
+}
+
+.form-row input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.form-row input:focus{
+    border: none;
+}
+
+.conf-password .message{
+    display: none;
+    margin-top: 8px;
+    font-size: 14px;
+    color: red;
+}
+
+/* submit button */
+.form-button{
+    margin-top: 25px;
+}
+
+.form-button button{
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #4361ee;
+    border-radius: 5px;
+}
+
+.login-link{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-link a{
+    text-decoration: none;
+    color: #3a86ff;
+}
+
+.error{
+    color: red;
+}
